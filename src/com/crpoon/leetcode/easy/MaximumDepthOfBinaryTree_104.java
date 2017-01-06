@@ -1,13 +1,9 @@
 package com.crpoon.leetcode.easy;
 
+import com.crpoon.leetcode.TreeNode;
+
 public class MaximumDepthOfBinaryTree_104 {
-	class TreeNode {
-	      int val;
-	      TreeNode left;
-	      TreeNode right;
-	      TreeNode(int x) { val = x; }
-	}
-	
+
 	public int maxDepth(TreeNode root) {
         if (root != null) {
             return recMaxDepth(root, 1);
